@@ -6,6 +6,7 @@ import { Button } from "../../Components/ui/button";
 import DataTable from "../../Components/DataTable";
 import { Globe, Play, Plus, Trash2, Cpu, Copy, FileText, CheckCircle2, ArrowUpDown, X } from "lucide-react";
 import { parseVigiaccessHTML } from "./utils/VIGIhtmlExtractors/parseSOC";
+import { FLASK_API_URL } from "../../services/api";
 
 const Field = ({ label, children }) => (
   <div className="w-full">
@@ -282,7 +283,7 @@ Elabora un análisis técnico que incluya:
 
 No concluyas que existe una señal de seguridad únicamente por diferencias en la frecuencia o por la presencia de un SOC. Indica únicamente si los hallazgos justifican una revisión posterior a nivel Preferred Term (PT).`;
 
-      const endpoint = aiProvider === "claude" ? "http://127.0.0.1:5000/api/claude" : "http://127.0.0.1:5000/api/openai";
+      const endpoint = aiProvider === "claude" ? `${FLASK_API_URL}/api/claude` : `${FLASK_API_URL}/api/openai`;
       const keyToUse = aiProvider === "claude" ? claudeApiKey : openaiApiKey;
       
       const response = await fetch(endpoint, {

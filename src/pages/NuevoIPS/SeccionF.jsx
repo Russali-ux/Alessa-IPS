@@ -1,5 +1,6 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import { useIPSStore } from "../../store/ipsStore";
+import { FLASK_API_URL } from "../../services/api";
 import {
   Upload, FileText, FolderOpen, CheckCircle2, XCircle,
   Loader2, Download, Trash2, Plus, AlertTriangle, RefreshCcw,
@@ -358,7 +359,7 @@ export default function SeccionF() {
   const handleDownload = async (item) => {
     if (!item.outputPath) return;
     try {
-      const url = `http://127.0.0.1:5000/api/download-ft?path=${encodeURIComponent(item.outputPath)}`;
+      const url = `${FLASK_API_URL}/api/download-ft?path=${encodeURIComponent(item.outputPath)}`;
       const response = await fetch(url);
       if (!response.ok) throw new Error("No se pudo descargar el archivo");
       const blob = await response.blob();
@@ -412,7 +413,7 @@ export default function SeccionF() {
     });
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/process-ft", {
+      const response = await fetch(`${FLASK_API_URL}/api/process-ft`, {
         method: "POST",
         body: formData,
       });

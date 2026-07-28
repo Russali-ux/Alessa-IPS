@@ -27,7 +27,7 @@ import eurdData from "../data/eurd_data.json";
 import excipientesData from "../data/excipientes_prospecto_ES_1.json";
 import UsersConfig from "./Config/UsersConfig";
 import WorkspacesConfig from "./Config/WorkspacesConfig";
-import { fetchWithAuth, API_URL, handleResponse } from "../services/api";
+import { fetchWithAuth, API_URL, handleResponse, FLASK_API_URL } from "../services/api";
 import ZoteroSettings from "./Config/ZoteroSettings";
 
 export default function Settings() {
@@ -366,11 +366,11 @@ export default function Settings() {
         return;
       }
 
-      let endpoint = "http://127.0.0.1:5000/api/save-atc";
+      let endpoint = `${FLASK_API_URL}/api/save-atc`;
       if (activeUploadType === "EURD") {
-        endpoint = "http://127.0.0.1:5000/api/save-eurd";
+        endpoint = `${FLASK_API_URL}/api/save-eurd`;
       } else if (activeUploadType === "EXCIPIENTES") {
-        endpoint = "http://127.0.0.1:5000/api/save-excipientes";
+        endpoint = `${FLASK_API_URL}/api/save-excipientes`;
       }
 
       const response = await fetch(endpoint, {

@@ -7,6 +7,7 @@ import { Button } from "../../Components/ui/button";
 import DataTable from "../../Components/DataTable";
 import { Upload, ClipboardList, Download, Copy, Trash2, Cpu, X, BookOpen } from "lucide-react";
 import { zoteroService } from "../../services/zotero.service";
+import { FLASK_API_URL } from "../../services/api";
 import ZoteroExplorerModal from "../../Components/Zotero/ZoteroExplorerModal";
 
 const Field = ({ label, children }) => (
@@ -90,7 +91,7 @@ export default function SeccionE() {
     formData.append("file", file);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/convert", {
+      const response = await fetch(`${FLASK_API_URL}/convert`, {
         method: "POST",
         body: formData,
       });
@@ -116,7 +117,7 @@ export default function SeccionE() {
       });
     } catch (error) {
       console.error("Error al subir archivo:", error);
-      alert("Error de conexión con el servidor Python. Verifica que app.py esté corriendo en http://127.0.0.1:5000");
+      alert("Error de conexión con el servidor Python. Verifica que app.py esté corriendo y accesible.");
       setAnalyses(prev => ({
         ...prev,
         [index]: { ...prev[index], isUploading: false }
@@ -298,7 +299,7 @@ L- riesgos identificados y su impacto`;
       }
 
       try {
-        const endpoint = aiProvider === "claude" ? "http://127.0.0.1:5000/api/claude" : "http://127.0.0.1:5000/api/openai";
+        const endpoint = aiProvider === "claude" ? `${FLASK_API_URL}/api/claude` : `${FLASK_API_URL}/api/openai`;
         const keyToUse = aiProvider === "claude" ? claudeApiKey : openaiApiKey;
         
         const response = await fetch(endpoint, {

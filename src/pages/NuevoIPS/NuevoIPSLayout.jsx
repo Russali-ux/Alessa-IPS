@@ -5,7 +5,7 @@ import { ChevronLeft, ChevronRight, Building2, Calendar, Save, FileText, Loader2
 import { Button } from "../../Components/ui/button";
 import { useIPSStore } from "../../store/ipsStore";
 import { useFormAdapter } from "../../hooks/useFormAdapter";
-import { fetchWithAuth, API_URL, handleResponse } from "../../services/api";
+import { fetchWithAuth, API_URL, handleResponse, FLASK_API_URL } from "../../services/api";
 import { buildReplacements, buildTables, buildSections } from "../../lib/ipsEngine/generator";
 import { useToast } from "../../contexts/ToastContext";
 
@@ -167,7 +167,7 @@ export default function NuevoIPSLayout() {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/generate-docx", {
+      const response = await fetch(`${FLASK_API_URL}/api/generate-docx`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ replacements, tables, sections, templatePath: secA.templatePath })
