@@ -6,15 +6,21 @@ import os
 import json
 import docx
 import requests
+from dotenv import load_dotenv
+import supabase_storage
+
+load_dotenv()
 
 app = Flask(__name__)
 # Permitir peticiones desde el frontend local de Vite (por defecto puerto 5173 u otros)
 CORS(app, resources={r"/*": {"origins": "*"}})
+
 # Ruta al binario de Pandoc: usa el empaquetado en backend/bin/pandoc si existe
 # (por ejemplo en Vercel, donde scripts/setup_pandoc.sh lo descarga en el build),
 # y si no, cae de vuelta al 'pandoc' del PATH del sistema (uso local normal).
 _BUNDLED_PANDOC = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bin', 'pandoc')
 PANDOC_BIN = _BUNDLED_PANDOC if os.path.exists(_BUNDLED_PANDOC) else 'pandoc'
+
 # ---------------- UTILIDADES ----------------
 
 def clean_text(text):
@@ -345,23 +351,32 @@ def generate_docx():
         if not template_filename:
             template_filename = 'FV-POE-07-F02 Formato de IPS PF.docx'
         
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        template_dir = os.path.join(base_dir, 'src', 'config', 'clienteTemplate')
-        template_path = os.path.join(template_dir, template_filename)
-        
-        if not os.path.exists(template_path):
-            # Attempt to find the file if it has a prefix (e.g. from multer)
-            found = False
-            if os.path.exists(template_dir):
-                for f in os.listdir(template_dir):
-                    if f.endswith(template_filename):
-                        template_path = os.path.join(template_dir, f)
-                        found = True
-                        break
-            if not found:
-                return jsonify({"error": f"No se encontró la plantilla en {template_path}"}), 404
-            
-        doc = docx.Document(template_path)
+        if template_filename.startswith('templates/'):
+            # Plantilla subida por el usuario: vive en el bucket de Supabase Storage
+            try:
+                template_bytes = supabase_storage.download_bytes(template_filename)
+            except Exception as e:
+                return jsonify({"error": f"No se encontró la plantilla en Storage ({template_filename}): {str(e)}"}), 404
+            doc = docx.Document(io.BytesIO(template_bytes))
+        else:
+            # Plantilla por defecto, incluida en el repo (solo lectura, funciona igual en Vercel)
+            base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            template_dir = os.path.join(base_dir, 'src', 'config', 'clienteTemplate')
+            template_path = os.path.join(template_dir, template_filename)
+
+            if not os.path.exists(template_path):
+                # Intentar encontrarla si tiene un prefijo (archivos legacy pre-migración)
+                found = False
+                if os.path.exists(template_dir):
+                    for f in os.listdir(template_dir):
+                        if f.endswith(template_filename):
+                            template_path = os.path.join(template_dir, f)
+                            found = True
+                            break
+                if not found:
+                    return jsonify({"error": f"No se encontró la plantilla en {template_path}"}), 404
+
+            doc = docx.Document(template_path)
         
         def replace_text_in_runs(runs, key, val):
             for run in runs:
@@ -677,9 +692,6 @@ def process_ft():
         folder_name = sanitize_folder_name(folder_name_raw)
 
         # Carpeta destino final
-        dest_dir = os.path.join(BASE_OUTPUT_DIR, client_folder, folder_name)
-        os.makedirs(dest_dir, exist_ok=True)
-
         # Usar directorio temporal del sistema para trabajar
         tmp_dir = tempfile.mkdtemp(prefix="ft_fixed_")
 
@@ -789,33 +801,38 @@ def process_ft():
                 continue
 
 
-            # ── Paso 6: Copiar archivos al destino final ──────────────────────────
+            # ── Paso 6: Subir archivos finales a Supabase Storage ──────────────────
+            # storage_prefix = "<cliente>/<carpeta>" dentro del bucket 'ips-documents'
+            storage_prefix = f"{client_folder}/{folder_name}"
+
             # 6a. Documento original subido por el usuario
-            dest_original = os.path.join(dest_dir, original_filename)
-            shutil.copy2(tmp_uploaded, dest_original)
+            storage_original = f"{storage_prefix}/{original_filename}"
+            supabase_storage.upload_file(tmp_uploaded, storage_original)
 
             # 6b. Word procesado (FT FIXED)
-            dest_docx = os.path.join(dest_dir, output_docx_name)
-            shutil.copy2(tmp_output_docx, dest_docx)
+            storage_docx = f"{storage_prefix}/{output_docx_name}"
+            supabase_storage.upload_file(tmp_output_docx, storage_docx)
 
             # 6c. Markdown transformado (mismo nombre que el original)
-            dest_md = os.path.join(dest_dir, md_filename)
-            shutil.copy2(tmp_md, dest_md)
+            storage_md = f"{storage_prefix}/{md_filename}"
+            supabase_storage.upload_file(tmp_md, storage_md)
 
             # 6d. Carpeta de imágenes (si existe, en tmp_dir/media/)
             media_dir_tmp = os.path.join(tmp_dir, 'media')
             if os.path.isdir(media_dir_tmp):
-                dest_media = os.path.join(dest_dir, 'media')
-                if os.path.exists(dest_media):
-                    shutil.rmtree(dest_media)
-                shutil.copytree(media_dir_tmp, dest_media)
+                for media_file in os.listdir(media_dir_tmp):
+                    media_local_path = os.path.join(media_dir_tmp, media_file)
+                    if os.path.isfile(media_local_path):
+                        supabase_storage.upload_file(
+                            media_local_path, f"{storage_prefix}/media/{media_file}"
+                        )
 
             results.append({
                 "filename": original_filename,
                 "outputFilename": output_docx_name,
-                "outputPath": dest_docx,
-                "mdPath": dest_md,
-                "destDir": dest_dir,
+                "outputPath": storage_docx,
+                "mdPath": storage_md,
+                "destDir": storage_prefix,
                 "status": "success"
             })
 
@@ -839,28 +856,25 @@ def process_ft():
 
 @app.route('/api/download-ft', methods=['GET'])
 def download_ft():
-    """Sirve un archivo procesado para descarga desde la ruta de destino."""
-    from flask import send_file
-    file_path = request.args.get('path', '')
+    """Sirve un archivo procesado para descarga desde Supabase Storage."""
+    storage_path = request.args.get('path', '')
 
-    if not file_path:
+    if not storage_path:
         return jsonify({"error": "Ruta no especificada"}), 400
 
-    # Seguridad: solo permitir archivos dentro de la carpeta base
-    abs_path = os.path.abspath(file_path)
-    abs_base = os.path.abspath(BASE_OUTPUT_DIR)
+    # Seguridad: no permitir path traversal fuera del bucket
+    if '..' in storage_path:
+        return jsonify({"error": "Ruta inválida"}), 403
 
-    if not abs_path.startswith(abs_base):
-        return jsonify({"error": "Acceso denegado"}), 403
+    try:
+        data = supabase_storage.download_bytes(storage_path)
+    except Exception as e:
+        return jsonify({"error": f"No se pudo descargar el archivo: {str(e)}"}), 404
 
-    if not os.path.isfile(abs_path):
-        return jsonify({"error": "Archivo no encontrado"}), 404
-
-    return send_file(
-        abs_path,
-        as_attachment=True,
-        download_name=os.path.basename(abs_path),
-        mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    return app.response_class(
+        data,
+        mimetype="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        headers={"Content-Disposition": f'attachment; filename="{os.path.basename(storage_path)}"'}
     )
 
 

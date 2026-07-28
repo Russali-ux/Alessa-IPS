@@ -30,6 +30,9 @@ backend/word_to_md_output/
 backend/uploads/
 src/config/uploads/
 
+# Pandoc binary bundled for Vercel (downloaded at build time by scripts/setup_pandoc.sh, ~160MB)
+backend/bin/
+
 # OS files
 Thumbs.db
 
@@ -43,5 +46,3 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
-# Pandoc binary bundled for Vercel (downloaded at build time by scripts/setup_pandoc.sh, ~160MB)
-backend/bin/

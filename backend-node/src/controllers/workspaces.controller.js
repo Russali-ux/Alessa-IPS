@@ -1,4 +1,5 @@
 import { query } from '../config/database.js';
+import { uploadBuffer } from '../utils/supabaseStorage.js';
 
 export const getAllWorkspaces = async (req, res) => {
     try {
@@ -63,10 +64,16 @@ export const createWorkspace = async (req, res) => {
         
         if (req.files) {
             if (req.files.templateWord && req.files.templateWord[0]) {
-                metadata.plantillas.ips = req.files.templateWord[0].filename;
+                const file = req.files.templateWord[0];
+                const storagePath = `templates/${code}/plantilla-${Date.now()}-${file.originalname}`;
+                await uploadBuffer(storagePath, file.buffer, file.mimetype);
+                metadata.plantillas.ips = storagePath;
             }
             if (req.files.inventoryExcel && req.files.inventoryExcel[0]) {
-                metadata.catalogos.productosFile = req.files.inventoryExcel[0].filename;
+                const file = req.files.inventoryExcel[0];
+                const storagePath = `templates/${code}/inventario-${Date.now()}-${file.originalname}`;
+                await uploadBuffer(storagePath, file.buffer, file.mimetype);
+                metadata.catalogos.productosFile = storagePath;
             }
         }
 
@@ -115,10 +122,11 @@ export const updateWorkspace = async (req, res) => {
         
         if (!targetId) return res.status(400).json({ message: 'Workspace ID requerido' });
 
-        // Get current metadata
-        const { rows: currentRows } = await query(`SELECT metadata FROM workspaces WHERE id = $1`, [targetId]);
+        // Get current metadata + code (código usado como carpeta en Storage)
+        const { rows: currentRows } = await query(`SELECT code, metadata FROM workspaces WHERE id = $1`, [targetId]);
         if (currentRows.length === 0) return res.status(404).json({ message: 'Workspace no encontrado' });
         
+        const workspaceCode = currentRows[0].code;
         let metadata = currentRows[0].metadata || { fv: {}, plantillas: {}, catalogos: {} };
         if (!metadata.fv) metadata.fv = {};
         if (!metadata.plantillas) metadata.plantillas = {};
@@ -129,10 +137,16 @@ export const updateWorkspace = async (req, res) => {
 
         if (req.files) {
             if (req.files.templateWord && req.files.templateWord[0]) {
-                metadata.plantillas.ips = req.files.templateWord[0].filename;
+                const file = req.files.templateWord[0];
+                const storagePath = `templates/${workspaceCode}/plantilla-${Date.now()}-${file.originalname}`;
+                await uploadBuffer(storagePath, file.buffer, file.mimetype);
+                metadata.plantillas.ips = storagePath;
             }
             if (req.files.inventoryExcel && req.files.inventoryExcel[0]) {
-                metadata.catalogos.productosFile = req.files.inventoryExcel[0].filename;
+                const file = req.files.inventoryExcel[0];
+                const storagePath = `templates/${workspaceCode}/inventario-${Date.now()}-${file.originalname}`;
+                await uploadBuffer(storagePath, file.buffer, file.mimetype);
+                metadata.catalogos.productosFile = storagePath;
             }
         }
 
