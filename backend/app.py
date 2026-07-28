@@ -311,28 +311,10 @@ def save_eurd():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-@app.route('/api/save-productos/<filename>', methods=['POST'])
-def save_productos(filename):
-    try:
-        data = request.json
-        if not isinstance(data, list):
-            return jsonify({"error": "El cuerpo de la petición debe ser una lista de productos"}), 400
-        
-        # Limpiar filename por seguridad
-        import werkzeug.utils
-        secure_name = werkzeug.utils.secure_filename(filename)
-        
-        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-        target_path = os.path.join(base_dir, 'src', 'data', secure_name)
-        
-        os.makedirs(os.path.dirname(target_path), exist_ok=True)
-        
-        with open(target_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=2)
-            
-        return jsonify({"success": True, "count": len(data)})
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+# NOTA: /api/save-productos fue retirado. El catálogo de productos por cliente
+# ahora se guarda en Postgres vía backend-node (/api/products/:code/import),
+# ya no como archivo JSON en src/data/. Ver Settings.jsx y products.controller.js.
+
 
 @app.route('/api/generate-docx', methods=['POST'])
 def generate_docx():

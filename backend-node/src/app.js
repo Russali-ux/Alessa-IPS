@@ -10,6 +10,7 @@ import ipsListRoutes from './routes/ips-list.routes.js';
 import ipsCasesRoutes from './routes/ips-cases.routes.js';
 import zoteroRoutes from './routes/zotero.routes.js';
 import pgxRoutes from './routes/pgx.routes.js';
+import productsRoutes from './routes/products.routes.js';
 import { authenticateToken } from './middlewares/auth.middleware.js';
 
 dotenv.config();
@@ -31,6 +32,7 @@ app.use('/api/ips-list', ipsListRoutes);
 app.use('/api/ips-cases', authenticateToken, ipsCasesRoutes);
 app.use('/api/integrations/zotero', zoteroRoutes);
 app.use('/api/integrations/pgx', pgxRoutes);
+app.use('/api/products', productsRoutes);
 
 // Basic error handler
 app.use((err, req, res, next) => {

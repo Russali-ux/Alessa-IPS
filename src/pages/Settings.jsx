@@ -27,6 +27,7 @@ import eurdData from "../data/eurd_data.json";
 import excipientesData from "../data/excipientes_prospecto_ES_1.json";
 import UsersConfig from "./Config/UsersConfig";
 import WorkspacesConfig from "./Config/WorkspacesConfig";
+import { fetchWithAuth, API_URL, handleResponse } from "../services/api";
 import ZoteroSettings from "./Config/ZoteroSettings";
 
 export default function Settings() {
@@ -343,11 +344,30 @@ export default function Settings() {
     setStatus({ type: "", message: "" });
 
     try {
-      let endpoint = "http://127.0.0.1:5000/api/save-atc";
+      // PRODUCTOS ahora se guarda en Postgres (vía backend-node), ya no en un JSON local.
+      // ATC/EURD/Excipientes siguen siendo catálogos de referencia gestionados por
+      // Flask + redeploy (ver nota en el backend sobre por qué se dejaron así).
       if (activeUploadType === "PRODUCTOS") {
         const cliente = clientesConfig.find(c => c.id === selectedCliente);
-        endpoint = `http://127.0.0.1:5000/api/save-productos/${cliente.catalogos.productosFile}`;
-      } else if (activeUploadType === "EURD") {
+        const resData = await fetchWithAuth(`${API_URL}/products/${cliente.id}/import`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(parsedData),
+        }).then(handleResponse);
+
+        if (resData.success) {
+          setStatus({ type: "success", message: `🎉 Dataset guardado correctamente en el proyecto.` });
+          setFile(null);
+          setParsedData([]);
+          setTimeout(() => window.location.reload(), 1500);
+        } else {
+          throw new Error(resData.error || "Ocurrió un error al guardar.");
+        }
+        return;
+      }
+
+      let endpoint = "http://127.0.0.1:5000/api/save-atc";
+      if (activeUploadType === "EURD") {
         endpoint = "http://127.0.0.1:5000/api/save-eurd";
       } else if (activeUploadType === "EXCIPIENTES") {
         endpoint = "http://127.0.0.1:5000/api/save-excipientes";

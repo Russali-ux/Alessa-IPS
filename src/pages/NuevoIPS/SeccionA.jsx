@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { usePersistedState } from "../../hooks/usePersistedState";
 import atcData from "../../data/atc_data.json";
 import eurdData from "../../data/eurd_data.json";
+import { fetchWithAuth, API_URL, handleResponse } from "../../services/api";
 
 // Importando tus componentes de UI
 import DataTable from "../../Components/DataTable";
@@ -231,24 +232,18 @@ export default function SeccionA() {
     }
   }, [state, setFormData]);
 
-  // Cargar catálogo de productos del cliente actual
+  // Cargar catálogo de productos del cliente actual (desde Postgres vía backend-node)
   useEffect(() => {
     const loadProductos = async () => {
       const clienteId = formData.clienteId;
       const cliente = activeClients.find(c => c.id === clienteId);
-      if (!cliente || !cliente.catalogos?.productosFile) {
+      if (!cliente) {
         setProductosData([]);
         return;
       }
       try {
-        const modules = import.meta.glob("../../data/*.json");
-        const filePath = `../../data/${cliente.catalogos.productosFile}`;
-        if (modules[filePath]) {
-          const mod = await modules[filePath]();
-          setProductosData(mod.default || []);
-        } else {
-          setProductosData([]);
-        }
+        const data = await fetchWithAuth(`${API_URL}/products/${cliente.id}`).then(handleResponse);
+        setProductosData(Array.isArray(data) ? data : []);
       } catch (e) {
         console.error("Error cargando productos:", e);
         setProductosData([]);
