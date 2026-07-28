@@ -10,7 +10,11 @@ import requests
 app = Flask(__name__)
 # Permitir peticiones desde el frontend local de Vite (por defecto puerto 5173 u otros)
 CORS(app, resources={r"/*": {"origins": "*"}})
-
+# Ruta al binario de Pandoc: usa el empaquetado en backend/bin/pandoc si existe
+# (por ejemplo en Vercel, donde scripts/setup_pandoc.sh lo descarga en el build),
+# y si no, cae de vuelta al 'pandoc' del PATH del sistema (uso local normal).
+_BUNDLED_PANDOC = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bin', 'pandoc')
+PANDOC_BIN = _BUNDLED_PANDOC if os.path.exists(_BUNDLED_PANDOC) else 'pandoc'
 # ---------------- UTILIDADES ----------------
 
 def clean_text(text):
@@ -704,7 +708,7 @@ def process_ft():
 
             pandoc_to_md = subprocess.run(
                 [
-                    'pandoc', docx_basename,          # Ruta relativa al cwd
+                    PANDOC_BIN, docx_basename,          # Ruta relativa al cwd
                     '-o', md_filename,                # Ruta relativa al cwd
                     '--extract-media=.',              # Extrae imágenes en ./media/ (relativo al cwd)
                     '--wrap=none',                    # Sin saltos de línea artificiales
@@ -748,7 +752,7 @@ def process_ft():
             # 5a: MD → HTML (pandoc renderiza las tablas HTML como HTML válido)
             pandoc_md_to_html = subprocess.run(
                 [
-                    'pandoc', md_filename,
+                    PANDOC_BIN, md_filename,
                     '-o', html_filename,
                     '--from=markdown+raw_html',   # Lee Markdown + bloques HTML crudos
                     '--to=html',
@@ -769,7 +773,7 @@ def process_ft():
             # 5b: HTML → DOCX (pandoc convierte <table> en tablas nativas de Word)
             pandoc_html_to_docx = subprocess.run(
                 [
-                    'pandoc', html_filename,
+                    PANDOC_BIN, html_filename,
                     '-o', output_docx_name,
                     '--from=html',                # Lee HTML completo (con tablas reales)
                 ],

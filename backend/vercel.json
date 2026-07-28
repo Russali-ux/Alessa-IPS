@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bash scripts/setup_pandoc.sh",
+  "functions": {
+    "app.py": {
+      "maxDuration": 60,
+      "excludeFiles": "{word_to_md_output/**,uploads/**}"
+    }
+  }
+}

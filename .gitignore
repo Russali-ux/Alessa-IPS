@@ -43,3 +43,5 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
+# Pandoc binary bundled for Vercel (downloaded at build time by scripts/setup_pandoc.sh, ~160MB)
+backend/bin/
