@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+backend-node/.env
+backend/.env
+
+# Python
+.venv
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+
+# Backend generated/output files (contain client data - shouldn't be in git)
+backend/word_to_md_output/
+backend/uploads/
+src/config/uploads/
+
+# OS files
+Thumbs.db
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

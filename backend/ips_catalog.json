@@ -1,0 +1,256 @@
+{
+  "$schema": "ips-catalog/v1",
+  "_comment": "Catálogo de sustitución para la plantilla FV-POE-07-F02 (Informe Periódico de Seguridad). Construido a partir de la matriz Excel IPS_Matriz_Reglas_Sustitucion.xlsx, contrastada contra el caso real IPS_PAZOPANIB_01. 'variables' = reemplazo directo valor->texto. 'paragraphs' = el motor NO debe guardar texto fijo: debe llamar a la función indicada en 'template' (ver ips_paragraph_rules.js) pasándole 'inputs' tomados del formulario, y el resultado de esa función es lo que se inserta en cada 'placeholder'. 'tables' queda como referencia para una siguiente etapa (no es objeto de esta entrega).",
+
+  "variables": [
+    {
+      "placeholder": "[nmPRODUCT]",
+      "formField": "product_name",
+      "label": "Nombre del producto (marca comercial)",
+      "type": "text",
+      "required": true,
+      "example": "Pazopanib"
+    },
+    {
+      "placeholder": "[nmIFA]",
+      "formField": "ifa_name",
+      "label": "Nombre del IFA / principio activo (DCI)",
+      "type": "text",
+      "required": true,
+      "example": "Pazopanib"
+    },
+    {
+      "placeholder": "[nmUVS]",
+      "formField": "pv_unit_name",
+      "label": "Unidad de Vigilancia de Seguridad que elabora el IPS",
+      "type": "text",
+      "required": true,
+      "default": "Área de Farmacovigilancia",
+      "example": "Área de Farmacovigilancia"
+    },
+    {
+      "placeholder": "TRS_NAME",
+      "formField": "trs_name",
+      "label": "Razón social del Titular del Registro Sanitario",
+      "type": "text",
+      "required": true,
+      "note": "En la plantilla aparece a veces como 'TRS_NAME.' (punto pegado); el reemplazo solo cubre la razón social, la puntuación del texto fijo no se toca.",
+      "example": "SEVEN PHARMA S.A.C."
+    },
+    {
+      "placeholder": "[nmFDLP]",
+      "formField": "data_lock_point",
+      "label": "Fecha de Corte de Información (Data Lock Point)",
+      "type": "date",
+      "format": "dd-mmm-yyyy",
+      "required": true,
+      "note": "Debe coincidir con la fecha fin de [PERIODO].",
+      "example": "11-Mar-2026"
+    },
+    {
+      "placeholder": "[nmIBD]",
+      "formField": "international_birth_date",
+      "label": "Fecha de Nacimiento Internacional (EURD)",
+      "type": "date",
+      "format": "dd-mmm-yyyy",
+      "required": true,
+      "example": "13-Jun-2010"
+    },
+    {
+      "placeholder": "[nmATCgroup]",
+      "formField": "atc_group",
+      "label": "Grupo farmacoterapéutico ATC",
+      "type": "text",
+      "required": true,
+      "example": "Otros inhibidores de proteínas cinasas"
+    },
+    {
+      "placeholder": "[nmATCcod]",
+      "formField": "atc_code",
+      "label": "Código ATC",
+      "type": "text",
+      "required": true,
+      "example": "L01EX03"
+    },
+    {
+      "placeholder": "[nmARN]",
+      "formField": "regulatory_authority",
+      "label": "Autoridad Reguladora Nacional (nombre completo + sigla)",
+      "type": "text",
+      "required": true,
+      "default": "Dirección General de medicamentos, insumos y drogas (DIGEMID)",
+      "example": "Dirección General de medicamentos, insumos y drogas (DIGEMID)"
+    },
+    {
+      "placeholder": "[numIPS]",
+      "formField": "ips_revision_number",
+      "label": "Número correlativo de revisión del IPS",
+      "type": "number",
+      "required": true,
+      "note": "Entero >= 1. Es el insumo de 'nmVersion' (ver paragraphs.local_birth_date... no, ver template ips_ordinal).",
+      "example": 1
+    },
+    {
+      "placeholder": "codIPS",
+      "formField": "ips_code",
+      "label": "Código identificador del IPS",
+      "type": "text",
+      "required": true,
+      "note": "Convención: 'IPS_' + PRODUCTO EN MAYÚSCULAS + correlativo de 2 dígitos.",
+      "example": "IPS_PAZOPANIB 01"
+    },
+    {
+      "placeholder": "elaboradoPor",
+      "formField": "prepared_by",
+      "label": "Nombre de quien elabora el IPS",
+      "type": "text",
+      "required": true,
+      "example": "Gian Carlos Chafloque Guzmán"
+    },
+    {
+      "placeholder": "elaboradoPor_cargo",
+      "formField": "prepared_by_role",
+      "label": "Cargo / empresa de quien elabora",
+      "type": "text",
+      "required": true,
+      "example": "CONKOMERCO S.A.C."
+    },
+    {
+      "placeholder": "elaboradoPor_email",
+      "formField": "prepared_by_email",
+      "label": "Correo de quien elabora",
+      "type": "email",
+      "required": true,
+      "example": "giancarlos.chafloque@conkomerco.com"
+    },
+    {
+      "placeholder": "fechaElaboracion",
+      "formField": "prepared_date",
+      "label": "Fecha de elaboración",
+      "type": "date",
+      "format": "dd-mmm-yyyy",
+      "required": true,
+      "example": "05-jun-2026"
+    },
+    {
+      "placeholder": "revisadoPor",
+      "formField": "reviewed_by",
+      "label": "Nombre de quien revisa el IPS",
+      "type": "text",
+      "required": true,
+      "example": "Q.F. Nelida Llamocca Limascca"
+    },
+    {
+      "placeholder": "fechaRevision",
+      "formField": "reviewed_date",
+      "label": "Fecha de revisión",
+      "type": "date",
+      "format": "dd-mmm-yyyy",
+      "required": true,
+      "example": "08-jun-2026"
+    },
+    {
+      "placeholder": "aprobadoPor",
+      "formField": "approved_by",
+      "label": "Nombre de quien aprueba el IPS",
+      "type": "text",
+      "required": true,
+      "example": "Q.F. Jessica Carlos"
+    },
+    {
+      "placeholder": "fechaAprobacion",
+      "formField": "approved_date",
+      "label": "Fecha de aprobación",
+      "type": "date",
+      "format": "dd-mmm-yyyy",
+      "required": true,
+      "example": "09-jun-2026"
+    }
+  ],
+
+  "_comment_presentations": "Las variables por presentación (nmPresentacion, forma farmacéutica, RS, fecha autorización local) NO son campos sueltos: son un arreglo 'presentations' en el formulario, porque un producto puede tener 1..N concentraciones. Cada item de ese arreglo alimenta tanto la tabla de identificación del producto como los templates de párrafo (local_birth_date, sales_exposure).",
+  "presentationsSchema": {
+    "formField": "presentations",
+    "type": "array",
+    "minItems": 1,
+    "itemFields": [
+      { "field": "presentation_name",  "label": "Concentración / presentación", "type": "text",   "example": "200mg" },
+      { "field": "pharma_form",        "label": "Forma farmacéutica",           "type": "text",   "example": "Tableta Recubierta" },
+      { "field": "sanitary_registry",  "label": "Número de Registro Sanitario", "type": "text",   "example": "EE-13846" },
+      { "field": "local_auth_date",    "label": "Fecha de autorización local",  "type": "date",   "format": "dd-mmm-yyyy", "example": "12-Mar-2025" },
+      { "field": "units_sold",         "label": "Unidades vendidas en el periodo", "type": "number", "nullable": true, "note": "null/0/vacío = sin unidades comercializadas", "example": null },
+      { "field": "ddd_value",          "label": "DDD (Dosis Diaria Definida)",  "type": "text",   "example": "800mg" },
+      { "field": "ddd_route",          "label": "Vía de administración (DDD)",  "type": "text",   "example": "Oral" }
+    ]
+  },
+
+  "paragraphs": [
+    {
+      "placeholder": "[parrafo_intro]",
+      "template": "local_birth_date",
+      "inputs": ["presentations"],
+      "occurrences": ["Resumen Ejecutivo", "Introducción"],
+      "note": "Frase incrustada dentro de una oración mayor de la plantilla: '...la fecha de nacimiento local perteneciente a TRS_NAME [parrafo_intro] y la fecha de nacimiento internacional...'. El resultado del template reemplaza SOLO el placeholder, no la oración completa. La capitalización de pharma_form se respeta tal cual el formulario (el documento de ejemplo es inconsistente entre 'Tableta Recubierta' y 'Tableta recubierta'; se prioriza consistencia sobre replicar ese error)."
+    },
+    {
+      "placeholder": "[nacimiento_local]",
+      "template": "local_birth_date",
+      "inputs": ["presentations"],
+      "occurrences": ["Situación Mundial de la Autorización"],
+      "note": "Mismo template y mismos inputs que [parrafo_intro]; el motor debe resolverlo una sola vez y reusar el resultado en ambos placeholders para garantizar consistencia."
+    },
+    {
+      "placeholder": "[nmVersion]",
+      "template": "ips_ordinal",
+      "inputs": ["ips_revision_number"],
+      "occurrences": ["Resumen Ejecutivo", "Introducción"]
+    },
+    {
+      "placeholder": "[pfIndic1]",
+      "template": "indications_list",
+      "inputs": ["indications"],
+      "occurrences": ["Tabla 1", "Conclusión", "Resumen Ejecutivo (evaluación beneficio-riesgo)", "Anexo Estatus Regulatorio"],
+      "note": "Debe resolverse una sola vez y reusarse igual en las 4 ubicaciones."
+    },
+    {
+      "placeholder": "[pfIndic2]",
+      "template": "indications_with_dose",
+      "inputs": ["indications", "recommended_dose", "dose_unit", "administration_route", "food_intake_condition"],
+      "occurrences": ["Resumen Ejecutivo", "Introducción"]
+    },
+    {
+      "placeholder": "[pfSRAentry]",
+      "template": "spontaneous_reports",
+      "inputs": ["total_reports"],
+      "occurrences": ["Resumen Ejecutivo", "Presentación tabulada de eventos adversos"]
+    },
+    {
+      "placeholder": "[exposed_patients_summary]",
+      "template": "exposed_patients_summary",
+      "inputs": ["presentations"],
+      "occurrences": ["Resumen Ejecutivo"],
+      "note": "Resuelve la frase de pacientes expuestos en post-comercialización ('no ha podido ser estimado...' / 'se ha estimado en N pacientes'). Usa internamente exposed_patients_calc por cada presentación."
+    },
+    {
+      "placeholder": "[last_minute_info]",
+      "template": "last_minute_information",
+      "inputs": ["period_start", "period_end", "post_dlp_window_days"],
+      "occurrences": ["Información de último momento"],
+      "note": "post_dlp_window_days es opcional; si no se provee, se omite la cláusula de días."
+    }
+  ],
+
+  "tables": [
+    { "placeholder": "[TABLE_IDENTIFICATION]", "source": "presentations_table", "note": "Tabla de identificación del producto en portada (1 fila por presentación)." },
+    { "placeholder": "[TABLE_1_WORLD_STATUS]",  "source": "world_authorization_table", "note": "1 fila por presentación; pfIndic1 solo en la primera fila." },
+    { "placeholder": "[TABLE_2_EXPOSURE_CT]",   "source": "clinical_trial_exposure_table", "note": "Patrón NA si no hubo ensayos clínicos locales." },
+    { "placeholder": "[TABLE_3_SPECIAL_POP]",   "source": "special_populations_table", "note": "Patrón NA por fila." },
+    { "placeholder": "[TABLE_4_SAE_CT]",        "source": "serious_ae_clinical_trials_table" },
+    { "placeholder": "[TABLE_5_RAM_POSTMKT]",   "source": "ram_postmarketing_table" },
+    { "placeholder": "[TABLE_6_CT_FINDINGS]",   "source": "clinical_trial_findings_table" },
+    { "placeholder": "[TABLE_7_OBS_FINDINGS]",  "source": "observational_findings_table" },
+    { "placeholder": "[TABLE_8_SIGNALS]",       "source": "signals_review_table" },
+    { "placeholder": "[TABLE_9_SAFETY_CONCERNS]","source": "safety_concerns_table" },
+    { "placeholder": "[ANNEX_REGULATORY_STATUS]","source": "regulatory_status_table", "note": "1 fila por presentación; pfIndic1 solo en la primera fila; columna ESTATUS en mayúsculas." }
+  ]
+}

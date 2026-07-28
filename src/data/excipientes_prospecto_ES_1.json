@@ -1,0 +1,896 @@
+{
+  "titulo": "Excipientes e información para el prospecto",
+  "idioma": "ES",
+  "fuente": "European Commission - Guideline on excipients in the labelling and package leaflet of medicinal products for human use (SANTE-2017-11668, revision 5)",
+  "total_excipientes": 111,
+  "excipientes": [
+    {
+      "nombre": "Aprotinina",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede producir hipersensibilidad o provocar reacciones de tipo alérgico graves.",
+      "comentarios": "En este caso la vía tópica se refiere a áreas que pueden tener acceso a la circulación (como heridas, cavidades corporales, etc.)."
+    },
+    {
+      "nombre": "Aceite de Arachis (aceite de cacahuete)",
+      "actualizado_a": null,
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "<Medicamento> contiene aceite de Arachis (aceite de cacahuete). No utilizar este medicamento en caso de alergia al cacahuete o a la soja.",
+      "comentarios": "El aceite de Arachis purificado puede contener proteínas de cacahuete. En la Ph. Eur. no se incluye un ensayo para proteínas residuales.\n\nFicha Técnica: contraindicación."
+    },
+    {
+      "nombre": "Aspartamo (E 951)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de aspartamo en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nEl aspartamo contiene una fuente de fenilalanina que puede ser perjudicial en caso de padecer fenilcetonuria (FCN), una enfermedad genética rara en la que la fenilalanina se acumula debido a que el organismo no es capaz de eliminarla correctamente.",
+      "comentarios": "El aspartamo se hidroliza en el tracto gastrointestinal cuando se ingiere por vía oral. Uno de los principales productos de hidrólisis es la fenilalanina.\n\nInformación a tener en cuenta en la Ficha Técnica: \nNo hay datos clínicos o preclínicos disponibles que permitan evaluar el uso de aspartamo en lactantes por debajo de 12 semanas de edad."
+    },
+    {
+      "nombre": "Colorantes azoicos\n\nej.:\nTartrazina (E 102)\nAmarillo anaranjado S (E 110)\nAzorubina, carmoisina (E 122)\nAmaranto (E 123)\nPonceau 4R, rojo Cochinilla A (E 124)\nNegro Brillante BN, negro PN (E 151)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones de tipo alérgico.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Bálsamo de Perú",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones en la piel.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de cloruro de benzalconio en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oftálmica",
+      "umbral": "Cero",
+      "informacion_prospecto": "El cloruro de benzalconio se puede absorber por las lentes de contacto blandas y puede alterar el color de las lentes de contacto. Retirar las lentes de contacto antes de usar este medicamento y. esperar 15 minutos antes de volver a colocarlas. \n\nEl cloruro de benzalconio puede causar irritación ocular, especialmente si padece de ojo seco u otras enfermedades de la córnea (capa transparente de la zona frontal del ojo). Consulte a su médico si siente una sensación extraña, escozor o dolor en el ojo después de usar este medicamento.",
+      "comentarios": "Los datos limitados disponibles no muestran diferencias en el perfil de acontecimientos adversos observados en niños comparado con los adultos.\n\nSin embargo, generalmente, los ojos en los niños, muestran una reacción más intensa que los ojos de los adultos tras recibir un estímulo. La irritación puede tener un efecto sobre el cumplimiento terapéutico en niños.\n\nSe ha notificado que el cloruro de benzalconio puede causar irritación ocular, síntomas de ojo seco y puede afectar a la película lacrimal y a la superficie de la córnea. Debe utilizarse con precaución en pacientes con ojo seco y en pacientes en los que la córnea pueda estar afectada.\n\nSe debe vigilar a los pacientes en caso de uso prolongado."
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Nasal",
+      "umbral": "Cero",
+      "informacion_prospecto": "El cloruro de benzalconio puede causar irritación o inflamación dentro de la nariz, especialmente cuando se usa durante un tratamiento a largo plazo.",
+      "comentarios": "La utilización a largo plazo puede causar edema de la mucosa nasal."
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Inhalatoria",
+      "umbral": "Cero",
+      "informacion_prospecto": "El cloruro de benzalconio puede provocar sibilancias y dificultades respiratorias (broncoespasmo), especialmente en pacientes con asma.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "El cloruro de benzalconio puede provocar irritación en la piel.\n\nNo aplicar este medicamento en el pecho durante la lactancia ya que podría pasar al bebé.",
+      "comentarios": "No se espera que el uso durante el embarazo y la lactancia esté asociado a efectos perjudiciales para la madre, ya que la absorción cutánea del cloruro de benzalconio es mínima.\n\nNo aplicar sobre la mucosa."
+    },
+    {
+      "nombre": "Cloruro de benzalconio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Bucal, rectal y vaginal",
+      "umbral": "Cero",
+      "informacion_prospecto": "El cloruro de benzalconio puede provocar irritación local.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Acido benzoico (E 210) y benzoatos:\n\nej.:\nBenzoato de Sodio (E 211)\nBenzoato de Potasio (E 212)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de <ácido benzoico/ sal de ácido benzoico> en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Acido benzoico (E 210) y benzoatos:\n\nej.:\nBenzoato de Sodio (E 211)\nBenzoato de Potasio (E 212)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "El <ácido benzoico/ sal de ácido benzoico> puede aumentar el riesgo de ictericia (coloración amarillenta de la piel y los ojos) en los recién nacidos (hasta de 4 semanas de edad).",
+      "comentarios": "El aumento de la bilirrubinemia seguido al desplazamiento de la albúmina puede aumentar la ictericia neonatal que puede convertirse en kernicterus (depósitos de bilirrubina no conjugada en el tejido cerebral)."
+    },
+    {
+      "nombre": "Acido benzoico (E 210) y benzoatos:\n\nej.:\nBenzoato de Sodio (E 211)\nBenzoato de Potasio (E 212)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "El <ácido benzoico/ sal de ácido benzoico> puede provocar irritación local.",
+      "comentarios": "Puede provocar reacciones no inmunológicas de contacto inmediato por un posible mecanismo colinérgico."
+    },
+    {
+      "nombre": "Acido benzoico (E 210) y benzoatos:\n\nej.:\nBenzoato de Sodio (E 211)\nBenzoato de Potasio (E 212)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "El <ácido benzoico/sal de ácido benzoico> puede aumentar el riesgo de ictericia (coloración amarillenta de la piel y los ojos) en los recién nacidos (hasta de 4 semanas de edad).",
+      "comentarios": "La absorción a través de la piel inmadura de los recién nacidos es significativa."
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de alcohol bencílico en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nEl alcohol bencílico puede provocar reacciones alérgicas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "El alcohol bencílico se ha relacionado con el riesgo de efectos adversos graves que incluyen problemas respiratorios (\"síndrome de jadeo\") en niños. \n\nNo administre este medicamento a su recién nacido (hasta de 4 semanas de edad) a menos que se lo haya recomendado su médico.",
+      "comentarios": "La administración por vía intravenosa de alcohol bencílico se ha asociado con reacciones adversas graves y muerte en recién nacidos (\"síndrome de jadeo\"). No se conoce la cantidad mínima de alcohol bencílico a la que se puede producir toxicidad.  \n\nSi se utiliza en recién nacidos debe aparecer una advertencia en la sección 4.4 de la Ficha Técnica."
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este producto no se debe utilizar durante más de una semana en niños menores de 3 años de edad a menos que se lo indique su médico o farmacéutico.",
+      "comentarios": "Aumento del riesgo debido a la acumulación en niños."
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Consulte a su médico o farmacéutico si está embarazada o en periodo de lactancia. Esto es debido  a que se pueden acumular grandes cantidades de alcohol bencílico  en su organismo y provocar efectos adversos (acidosis metabólica).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Consulte a su médico o farmacéutico si tiene enfermedades de hígado o riñón. Esto es debido a que se pueden acumular en el organismo grandes cantidades de alcohol bencílico y provocar efectos adversos (acidosis metabólica).",
+      "comentarios": "Los volúmenes elevados se deben utilizar con precaución y sólo en caso necesario, especialmente en pacientes con insuficiencia hepática o renal debido al riesgo de acumulación y toxicidad (acidosis metabólica)."
+    },
+    {
+      "nombre": "Alcohol bencílico",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "El alcohol bencílico puede provocar irritación local moderada.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Aceite de bergamota que contiene bergapteno",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede aumentar la sensibilidad a la luz UV (luz diurna natural o artificial).",
+      "comentarios": "No es aplicable cuando se demuestra que el aceite no contiene bergapteno."
+    },
+    {
+      "nombre": "Ácido bórico (y boratos)",
+      "actualizado_a": "2022-03-29",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "1 mg B/día*",
+      "informacion_prospecto": "Este medicamento no se debe administrar  a niños menores de 2 años de edad sin consultar antes con su médico, ya que contiene boro y puede afectar a la fertilidad en el futuro.",
+      "comentarios": "* 1 mg B (Boro) = 5.7 mg ácido bórico. \n\nVer documento de preguntas y respuestas (EMA/CHMP/619104/2013 Rev.2) para más aclaraciones sobre los cálculos. \n\nCantidad de boro por grupo de edad que puede afectar a la fertilidad cuando se supera: \n\nEdad                  Límite de seguridad\n< 2 años            1 mg B/día \n< 12 años          3 mg B/día\n< 18 años**      7 mg B/día\n≥ 18 años**      10 mg B/día\n\n** Cantidad que puede resultar perjudicial para/ el niño no nacido/nonato.\n\nEn base a la información incluida en la tabla anterior, se deben incluir advertencias correspondientes (si proceden) en las secciones 4.4 y 4.6 de la ficha técnica."
+    },
+    {
+      "nombre": "Ácido bórico (y boratos)",
+      "actualizado_a": "2022-03-29",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "3 mg B/día*",
+      "informacion_prospecto": "Este medicamento no se debe administrar a niños menores de 12 años de edad sin consultar antes con su médico, ya que contiene boro y puede afectar a la fertilidad en el futuro.",
+      "comentarios": "Ver comentarios anteriores."
+    },
+    {
+      "nombre": "Ácido bórico (y boratos)",
+      "actualizado_a": "2022-03-29",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "7 mg B/día*",
+      "informacion_prospecto": "Este medicamento no se debe administrar  a niños menores de 18 años de edad sin consultar antes con su médico, ya que contiene boro y puede afectar a la fertilidad en el futuro.\n\nSi está embarazada, consulte con su médico antes de tomar este medicamento, ya que por su contenido en boro puede resultar perjudicial para su bebé.",
+      "comentarios": "Ver comentarios anteriores."
+    },
+    {
+      "nombre": "Bronopol",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (ej. dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Butil hidroxianisol (E 320)",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto) o irritación de los ojos y membranas mucosas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Butil hidroxitolueno (E 321)",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto) o irritación de los ojos y membranas mucosas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Alcohol cetoestearílico incluyendo alcohol cetílico",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Chlorocresol",
+      "actualizado_a": null,
+      "via_administracion": "Tópica, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Ciclodextrinas\n\nej.:\nAlfadex\nBetadex (E 459)\nγ-ciclodextrina\nSulfobutileter-β-ciclodextrina (SBE-β-CD) \nHidroxipropil betadex\nMetilada aleatoriamente-β-ciclodextrina (RM-β-CD)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "20 mg/kg/día",
+      "informacion_prospecto": "Este medicamento contiene x mg de ciclodextrina(s) en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nNo utilizar en niños menores de 2 años de edad a menos que lo haya recomendado su médico.",
+      "comentarios": "Las ciclodextrinas (CDs) son excipientes que pueden alterar las propiedades (por toxicidad o penetración en la piel) del principio activo y de otros medicamentos. La seguridad de las CDs se ha tenido en cuenta durante la evaluación de la seguridad el desarrollo del medicamento y están claramente indicadas en la Ficha Técnica.\n\nNo hay suficiente información sobre los efectos de las CDs en niños < 2 años. Por tanto, se evaluará caso por caso el riesgo/beneficio para el paciente.\n\nDe acuerdo a los estudios en animales y a la experiencia en humanos, no se espera que las CDs provoquen efectos perjudiciales a dosis inferiores a 20 mg/kg/día."
+    },
+    {
+      "nombre": "Ciclodextrinas\n\nej.:\nAlfadex\nBetadex (E 459)\nγ-ciclodextrina\nSulfobutileter-β-ciclodextrina (SBE-β-CD) \nHidroxipropil betadex\nMetilada aleatoriamente-β-ciclodextrina (RM-β-CD)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral",
+      "umbral": "200 mg/kg/día",
+      "informacion_prospecto": "Las ciclodextrinas pueden provocar problemas digestivos como la diarrea.",
+      "comentarios": "A dosis elevadas, las ciclodextrinas pueden provocar diarrea reversible y ensanchamiento cecal en animales."
+    },
+    {
+      "nombre": "Ciclodextrinas\n\nej.:\nAlfadex\nBetadex (E 459)\nγ-ciclodextrina\nSulfobutileter-β-ciclodextrina (SBE-β-CD) \nHidroxipropil betadex\nMetilada aleatoriamente-β-ciclodextrina (RM-β-CD)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Parenteral",
+      "umbral": "200 mg/kg/día y utilizado durante > 2 semanas",
+      "informacion_prospecto": "Si padece una insuficiencia renal, consulte con su médico antes de tomar este medicamento.",
+      "comentarios": "En niños menores de 2 años, la función glomerular más baja puede proteger contra la toxicidad renal, pero puede dar lugar a niveles más elevados de ciclodextrinas en sangre.\n\nEn pacientes con insuficiencia renal de moderada a grave se puede producir una acumulación de ciclodextrinas."
+    },
+    {
+      "nombre": "Dextranos\n\ne.j.\ndextrano 1 inyectable,\ndextrano 40 inyectable,\ndextrano 60 inyectable,\ndextrano 70 inyectable",
+      "actualizado_a": "2025-12-05",
+      "via_administracion": "Parenteral Inhalatoria",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de dextrano(s) <tipo> en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nLos dextranos pueden causar reacciones alérgicas repentinas y graves, con síntomas como dificultad para respirar, hinchazón, mareo, ritmo cardíaco acelerado, sudoración y pérdida del conocimiento. Busque atención médica de  inmediato si experimenta alguno de estos síntomas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Dimetilsulfóxido",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar irritación de la piel.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Etanol",
+      "actualizado_a": "2019-11-22",
+      "via_administracion": "Oral\nParenteral\nInhalatoria",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de alcohol (etanol) en cada <unidad de dosis><unidad de volumen><que equivale a x mg/<peso><volumen>><(y% p/<p> <v>)>. La cantidad en <dosis> <volumen> de este medicamento es equivalente a menos de A ml de cerveza o B ml de vino.\n\nLa pequeña cantidad de alcohol que contiene este medicamento no produce ningún efecto perceptible.",
+      "comentarios": "En los casos en los que el etanol se utilice durante la fabricación (por ejemplo, durante el proceso de recubrimiento del comprimido) o como disolvente de extracción, y sea posteriormente evaporado (por debajo del nivel establecido en la ICH Q3C) no es necesario mencionar la presencia de etanol en el prospecto.\n\nPara calcular el volumen equivalente de cerveza y de vino, se asume que el contenido de etanol en la cerveza es del 5% v/v (alcohol por volumen), que equivale al 4% p/v, y en el vino del 12,5% v/v o 10% p/v (la densidad relativa del etanol es aproximadamente 0,8).\n\nLos volúmenes de cerveza y vino (A y B) se deben redondear al siguiente número entero."
+    },
+    {
+      "nombre": "Etanol",
+      "actualizado_a": "2019-11-22",
+      "via_administracion": "Oral\nParenteral\nInhalatoria",
+      "umbral": "15 mg/kg  por dosis",
+      "informacion_prospecto": "Este medicamento contiene x mg de alcohol (etanol) en cada <unidad de dosis><unidad de volumen><que equivale a x mg/<peso> <volumen>><(y% p/<p><v>)>. La cantidad en <dosis><volumen> de este medicamento es equivalente a menos de A ml de cerveza o B ml de vino.\n\nEs poco probable que la cantidad de alcohol que contiene este medicamento tenga algún efecto perceptible en adultos o adolescentes. Podría tener algunos efectos en niños pequeños, como por ejemplo somnolencia.\n\nLa cantidad de alcohol contenida en este medicamento puede alterar el efecto de otros medicamentos. Consulte con su médico o farmacéutico si está tomando otros medicamentos.\n\nSi está embarazada o en periodo de lactancia, consulte con su médico o farmacéutico antes de tomar este medicamento.\n\nSi tiene adicción al alcohol, consulte con su médico o farmacéutico antes de tomar este medicamento.",
+      "comentarios": "Para calcular el volumen equivalente de cerveza y vino, se asume que el contenido de etanol en la cerveza es del 5% v/v (alcohol por volumen), que equivale al 4% p/v, y en el vino del 12,5% v/v o 10% p/v (la densidad relativa del etanol es aproximadamente 0,8).\n\nEn los casos en que sea relevante, las interacciones del etanol deben incluirse en la sección 4.5 de la ficha técnica.\n\nSugerencia de información a incluir en la ficha técnica:\nUna dosis de (seleccionar dosis máxima) de este medicamento administrada a (un niño de A años de edad y con un peso de B kg o a un adulto con un peso de 70 kg) sería igual a la exposición a C mg/kg de etanol que podría producir un aumento en la concentración de alcohol en sangre de aproximadamente D mg/100 ml (ver apéndice 1 del informe EMA/CHMP/43486/2018).\n\nPor ejemplo, para un adulto que bebe un vaso de vino o 500 ml de cerveza, la concentración de alcohol en sangre sería de, aproximadamente, 50 mg/100 ml.\n\nLa administración concomitante de medicamentos que contienen, por ejemplo, propilenglicol o etanol podría dar lugar a la acumulación de etanol y provocar efectos adversos, en particular en niños pequeños con capacidad metabólica reducida o inmadura.\n\nCuando la dosis se administra a largo plazo (por ejemplo, por perfusión lenta durante varias horas), el incremento de la concentración de alcohol en sangre será menor y los efectos del alcohol pueden ser menores. En estos casos, el prospecto y la ficha técnica deben incluir el siguiente redactado: Como este medicamento se administra normalmente de forma lenta durante XX horas, los efectos del alcohol pueden ser menores."
+    },
+    {
+      "nombre": "Etanol",
+      "actualizado_a": "2019-11-22",
+      "via_administracion": "Oral\nParenteral\nInhalatoria",
+      "umbral": "75 mg/kg  por dosis",
+      "informacion_prospecto": "Este medicamento contiene x mg de alcohol (etanol) en cada <unidad de dosis><unidad de volumen><que equivale a x mg/<peso><volumen>><(y% p/<p><v>) >. La cantidad en <dosis> <volumen> de este medicamento es equivalente a menos de A ml de cerveza o B ml de vino.\n\nEl alcohol que contiene este medicamento puede afectar a los niños. Los efectos que pueden aparecer son cambios en el comportamiento y somnolencia. También puede afectar a su capacidad para concentrarse y realizar actividades físicas.\n\nLa cantidad de alcohol contenida en este medicamento puede afectar a su capacidad para conducir y utilizar máquinas debido a que puede alterar su criterio y capacidad de reacción.\n\nSi sufre epilepsia o problemas de hígado, consulte a su médico o farmacéutico antes de tomar este medicamento.\n\nLa cantidad de alcohol contenida en este medicamento puede alterar el efecto de otros medicamentos. Consulte a su médico o farmacéutico si está tomando otros medicamentos.\n\nSi está embarazada o en periodo de lactancia, consulte con su médico o farmacéutico antes de tomar este medicamento.\n\nSi tiene adicción al alcohol, consulte con su médico o farmacéutico antes de tomar este medicamento.",
+      "comentarios": "Ver comentarios anteriores."
+    },
+    {
+      "nombre": "Etanol",
+      "actualizado_a": "2019-11-22",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de alcohol (etanol) en cada <unidad de dosis><unidad de volumen><que equivale a x mg/<peso> <volumen>><(y% p/<p><v>).\n\nPuede causar sensación de ardor en piel lesionada.",
+      "comentarios": "En recien nácidos (bebés prematuros y recién nacidos a término), las concentraciones elevadas de etanol pueden causar reacciones locales graves y toxicidad sistémica debido a la absorción significativa a través de la piel inmadura (especialmente en caso de oclusión). Se debe incluir en ficha técnica y prospecto una advertencia al respecto.\n\nDependiendo del medicamento y de la concentración de etanol, puede ser necesario incluir  la leyenda \"inflamable\". En estos casos se deberá valorar la inclusión advertencias sobre el uso del medicamento cerca de una llama, de cigarrillos encendidos o de algunos dispositivos (por ejemplo, secadores de pelo)."
+    },
+    {
+      "nombre": "Formaldehído",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Formaldehído",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar molestias de estómago y diarrea.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Fragancias que contienen alérgenos*\n\n(Ver apéndice)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene fragancias con <alérgeno(s)>*.\n\n<Alérgeno(s)>* puede provocar reacciones alérgicas.",
+      "comentarios": "*<   >: alérgenos de fragancias enumerados en el apéndice.\n\nAdemás de las reacciones alérgicas en pacientes sensibilizados, se puede producir sensibilización en pacientes no sensibilizados.\n\nEl alcohol bencílico figura como uno de los 26 alérgenos de fragancias, aunque se puede utilizar también como excipiente. Cuando el alcohol bencílico se utiliza como excipiente (además de como una fragancia) debe aparecer la advertencia de este excipiente en el etiquetado."
+    },
+    {
+      "nombre": "Fructosa",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de fructosa en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.",
+      "comentarios": "Se debe tener en cuenta el efecto aditivo de los medicamentos que contienen fructosa (o sorbitol) administrados de forma concomitante y la ingesta de fructosa (o sorbitol) en la dieta."
+    },
+    {
+      "nombre": "Fructosa",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "[Si el medicamento está en contacto con los dientes (ej. líquidos orales, pastillas para chupar y comprimidos masticables) y se va a utilizar a largo plazo:]\nLa fructosa puede dañar los dientes.",
+      "comentarios": "Esto aplica a los medicamentos orales utilizados de forma frecuente o para un uso crónico, ej. 2 o más semanas."
+    },
+    {
+      "nombre": "Fructosa",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Intravenosa (IV)",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si usted (o su hijo) padecen intolerancia hereditaria a la fructosa (IHF), una enfermedad genética rara, no deben recibir este medicamento. Los pacientes con IHF no pueden descomponer la fructosa de este medicamento, lo que puede provocar efectos adversos graves.\n\nConsulte con su médico antes de recibir este medicamento si usted (o su hijo) padecen IHF o no pueden tomar alimentos o bebidas dulces porque les produce mareos, vómitos o efectos desagradables como hinchazón, calambres en el estómago o diarrea.",
+      "comentarios": "Los pacientes con intolerancia hereditaria a la fructosa (IHF) no deben recibir este medicamento a menos que sea estrictamente necesario.\n\nLos bebés y los niños (menores de 2 años de edad) podrían no estar diagnosticados de intolerancia hereditaria a la fructosa (IHF). Los medicamentos (que contienen fructosa) que se administran por vía intravenosa pueden resultar potencialmente mortales y deben estar contraindicados para esta población a menos que exista una necesidad clínica absoluta y no exista ninguna otra alternativa disponible.\n\nAntes de recibir este medicamento, se debe revisar detalladamente la historia clínica del paciente en cuanto a los síntomas de IHF."
+    },
+    {
+      "nombre": "Fructosa",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral (no vía IV)",
+      "umbral": "5 mg/kg/día",
+      "informacion_prospecto": "Si su médico le ha indicado que usted (o su hijo) padecen una intolerancia a ciertos azúcares, o se les ha diagnosticado intolerancia hereditaria a la fructosa (IHF), una enfermedad genética rara, en la que el paciente no puede descomponer la fructosa, consulte usted (o su hijo) con su médico antes de tomar este medicamento.",
+      "comentarios": "Los pacientes con intolerancia hereditaria a la fructosa (IHF) no deben tomar/recibir este medicamento."
+    },
+    {
+      "nombre": "Galactosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico la ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hereditaria a la galactosa (ej. galactosemia o problemas de absorción de glucosa o galactosa) no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Galactosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral, parenteral",
+      "umbral": "5 g",
+      "informacion_prospecto": "Contiene x g de galactosa por dosis, lo que debe ser tenido en cuenta en pacientes con diabetes mellitus.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Glucosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico le ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con problemas de absorción de glucosa o galactosa no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Glucosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral, parenteral",
+      "umbral": "5 g",
+      "informacion_prospecto": "Contiene x g de glucosa por dosis, lo que debe ser tenido en cuenta en pacientes con diabetes mellitus.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Glucosa",
+      "actualizado_a": null,
+      "via_administracion": "Líquidos orales, pastillas y comprimidos masticables",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede perjudicar los dientes.",
+      "comentarios": "Incluir información sólo si el medicamento está indicado para  uso crónico (por ejemplo, dos o más semanas)."
+    },
+    {
+      "nombre": "Glicerol (E 422)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "10 g por dosis",
+      "informacion_prospecto": "Puede provocar dolor de cabeza, molestias de estómago y diarrea.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Glicerol (E 422)",
+      "actualizado_a": null,
+      "via_administracion": "Rectal",
+      "umbral": "1 g",
+      "informacion_prospecto": "Puede tener un ligero efecto laxante.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Heparina (como excipiente)",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas y disminución en el recuento de células sanguíneas que puede afectar al sistema de coagulación sanguínea. Los pacientes con antecedentes de reacciones alérgicas inducidas por la heparina deben evitar el uso de medicamentos que contengan heparina.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Azúcar invertido",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico la ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hereditaria a la fructosa o problemas de absorción de glucosa o galactosa no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Azúcar invertido",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "5 g",
+      "informacion_prospecto": "Contiene x g de una mezcla de fructosa y glucosa por dosis, lo que debe ser tenido en cuenta en pacientes con diabetes mellitus.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Azúcar invertido",
+      "actualizado_a": null,
+      "via_administracion": "Líquidos orales, pastillas y comprimidos masticables",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede perjudicar los dientes.",
+      "comentarios": "Incluir información solo si el medicamento está indicado para  uso crónico (ej. dos o más semanas)."
+    },
+    {
+      "nombre": "Lactitol (E 966)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico la ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hereditaria a la fructosa o a la galactosa, galactosemia o problemas de absorción de glucosa o galactosa no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Lactitol (E 966)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "10 g",
+      "informacion_prospecto": "Puede tener un ligero efecto laxante.\n\nValor calórico: 2,1 kcal/g de lactitol.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Lactosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico la ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hederitaria a galactosa, deficiencia total de lactasa o problemas de absorción de glucosa o galactosa no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Lactosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "5 g",
+      "informacion_prospecto": "Contiene x g de lactosa (x/2 g de glucosa y x/2 g de galactosa) por dosis, lo que debe tenerse en cuenta en pacientes con diabetes mellitus.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Látex\nGoma natural de látex",
+      "actualizado_a": null,
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "El envase de este medicamento contiene goma de látex. Puede provocar reacciones alérgicas graves.",
+      "comentarios": "No es un excipiente habitual pero se considera necesario incluir una advertencia."
+    },
+    {
+      "nombre": "Aceite de castor polioxilado \nAceite de castor polioxil hidrogenado",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas graves.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Aceite de castor polioxilado \nAceite de castor polioxil hidrogenado",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar molestias de estómago y diarrea.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Aceite de castor polioxilado \nAceite de castor polioxil hidrogenado",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede causar reacciones en la piel.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Maltitol (E 965) \nIsomaltosa (E 953) (isomaltitol)\nMaltitol líquido (jarabe de glucosa hidrogenado)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico le ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hereditaria a la fructosa no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Maltitol (E 965) \nIsomaltosa (E 953) (isomaltitol)\nMaltitol líquido (jarabe de glucosa hidrogenado)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "10 g",
+      "informacion_prospecto": "Puede tener un ligero efecto laxante.\n\nValor calórico: 2,3 kcal/g de <maltitol><isomaltosa>.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Manitol (E 421)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "10 g",
+      "informacion_prospecto": "Puede tener un ligero efecto laxante.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Compuestos mercuriales orgánicos\n\nej.:\nTiomersal\nNitrato/acetato/borato de fenilmercurio",
+      "actualizado_a": null,
+      "via_administracion": "Ocular",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas.",
+      "comentarios": "Ver EMEA Public Statement, \n8 July 1999, \nRef. EMEA/20962/99"
+    },
+    {
+      "nombre": "Compuestos mercuriales orgánicos\n\nej.:\nTiomersal\nNitrato/acetato/borato de fenilmercurio",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto) y coloración.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Compuestos mercuriales orgánicos\n\nej.:\nTiomersal\nNitrato/acetato/borato de fenilmercurio",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene (tiomersal) como conservante, por lo que es posible que Ud. o su hijo experimenten una reacción alérgica. Informe a su médico si Ud. /su hijo> tiene alguna alergia conocida.",
+      "comentarios": "Ver EMEA Public Statement, \n8 July 1999, \nRef. EMEA/20962/99"
+    },
+    {
+      "nombre": "Compuestos mercuriales orgánicos\n\nej.:\nTiomersal\nNitrato/acetato/borato de fenilmercurio",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Informe a su médico si Ud. / su hijo ha padecido algún problema de salud después de la administración de una vacuna.",
+      "comentarios": "Declaración adicional a mencionar para vacunas."
+    },
+    {
+      "nombre": "Parahidroxibenzoatos y sus ésteres\n\nej.:\np-hidroxibenzoato de etilo (E 214)\np-hidroxibenzoato sódico de etilo (E 215)\np-hidroxibenzoato de propilo \np-hidroxibenzoato sódico de propilo \np-hidroxibenzoato de metilo (E 218)\np-hidroxibenzoato sódico de metilo (E 219)",
+      "actualizado_a": null,
+      "via_administracion": "Oral\nOcular\nTópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas (posiblemente retardadas).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Parahidroxibenzoatos y sus ésteres\n\nej.:\np-hidroxibenzoato de etilo (E 214)\np-hidroxibenzoato sódico de etilo (E 215)\np-hidroxibenzoato de propilo \np-hidroxibenzoato sódico de propilo \np-hidroxibenzoato de metilo (E 218)\np-hidroxibenzoato sódico de metilo (E 219)",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral Inhalatoria",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones alérgicas (posiblemente retardadas) y, excepcionalmente broncoespasmo.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Fenilalanina",
+      "actualizado_a": "09/10/2017\n\nCorrección 19/11/2018",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de fenilalanina en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nLa fenilalanina puede ser perjudicial en caso de padecer fenilcetonuria (FCN), una enfermedad genética rara en la que la fenilalanina se acumula debido a que el organismo no es capaz de eliminarla correctamente.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Tampon fosfato",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oftálmica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de fosfatos en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nSi sufre de daño grave en la capa trasparente de la parte frontal del ojo (córnea) el tratamiento con fosfatos, en casos muy raros, puede provocar parches nublados en la córnea debido al calcio.",
+      "comentarios": "El texto correspondiente en la sección 4.8 de Ficha Técnica (reacciones adversas):\n\"Se han notificado, de forma muy rara, casos de calcificación corneal asociados al uso de colirios que contienen fosfatos en algunos pacientes con las córneas dañadas de forma significativa.\""
+    },
+    {
+      "nombre": "Polisorbatos\n\ne.j.: \nPS 20 (E 432) \nPS 80 (E 433)\nPS 40 (E 434)\nPS 60 (E 435)\nPS 65 (E 436) \nPS 85",
+      "actualizado_a": "2024-04-17",
+      "via_administracion": "Parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de polisorbato <tipo> en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.\n\nLos polisorbatos pueden causar reacciones alérgicas. Informe a su médico si <tiene><su hijo tiene> cualquier alergia conocida.",
+      "comentarios": null
+    },
+    {
+      "nombre": null,
+      "actualizado_a": null,
+      "via_administracion": null,
+      "umbral": "3 mg/kg/día\n\n(Cantidad total de todos los polisorbatos en el medicamento)",
+      "informacion_prospecto": "Los polisorbatos pueden tener un efecto en el corazón y en la circulación sanguínea (p. ej. latidos cardíacos irregulares o anormales, o tensión arterial baja).",
+      "comentarios": "Como medida de minimización del riesgo, se recomienda incluir la reducción de la velocidad de inyección/ perfusión en las fichas técnicas de los medicamentos parenterales.\n\nDebido a una potencial prolongación del QT y de torsades de pointes en humanos, se debe considerar como medidad de minimización del riesgo, incluir en la ficha técnica una advertencia sobre el riesgo del uso concomitante de medicamentos que prolonguen el intervalo QT/QTc o para pacientes con una anomalía congénita."
+    },
+    {
+      "nombre": null,
+      "actualizado_a": null,
+      "via_administracion": null,
+      "umbral": "35 mg/kg/día\n\n(Cantidad total de todos los polisorbatos en el medicamento)",
+      "informacion_prospecto": "Los polisorbatos pueden tener un efecto en el hígado.\n\nPregunte a su médico o farmacéutico si sufre alguna enfermedad hepática.",
+      "comentarios": "Se han notificado casos en adultos que indican la aparición de signos de hepatotoxicidad (elevación de las enzimas hepáticas) con una dosis diaria acumulada de 35-40 mg/kg.\n\nEn neonatos, el polisorbato a dosis > 80 mg/kg/día produce hepatotoxicidad grave (mortal)."
+    },
+    {
+      "nombre": null,
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Los polisorbatos pueden causar reacciones alérgicas.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Potasio",
+      "actualizado_a": null,
+      "via_administracion": "Parenteral",
+      "umbral": "Menos de 1 mmol por dosis",
+      "informacion_prospecto": "Este medicamento contiene potasio, menos de 1 mmol (39 mg/) por <dosis>; esto es, esencialmente “exento de potasio”.",
+      "comentarios": "La información se refiere a un umbral basado en la cantidad total de K+ en el medicamento.\n\nEs especialmente relevante en el caso de productos utilizados en dosis pediátricas, para aportar información a los prescriptores y tranquilizar a los padres con relación al bajo nivel de K+ en el producto."
+    },
+    {
+      "nombre": "Potasio",
+      "actualizado_a": null,
+      "via_administracion": "Oral, parenteral",
+      "umbral": "1 mmol por dosis",
+      "informacion_prospecto": "Este medicamento contiene x mmol (ó y mg) de potasio por <dosis>, lo que debe tenerse en cuenta en pacientes con insuficiencia renal o en pacientes con dietas pobres en potasio.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Potasio",
+      "actualizado_a": null,
+      "via_administracion": "Intravenosa (IV)",
+      "umbral": "30 mmol/l",
+      "informacion_prospecto": "Puede producir dolor en el lugar de la inyección.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Prolina",
+      "actualizado_a": "2024-03-04",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de prolina en cada <unidad de dosis>/<unidad de volumen> <equivalente a x mg/<peso><volumen>>. \nLa prolina puede ser perjudicial en pacientes con hiperprolinemia, una enfermedad genética rara en la que la prolina se acumula en el organismo. \nSi usted (o su hijo) padece hiperprolinemia, no utilice este medicamento a menos que su médico se lo recomiende.",
+      "comentarios": "Se debe minimizar la exposición a prolina en los pacientes que padecen hiperprolinemia.\nSólo se debe utilizar en pacientes con hiperprolinemia si es estrictamente necesario (p. ej.: si no existe un tratamiento alternativo disponible)."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "1 mg/kg/día",
+      "informacion_prospecto": "Este medicamento contiene x mg de propilenglicol en cada <unidad de dosis><unidad de volumen> <equivalente a x mg/<peso><volumen>>.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "1 mg/kg/día",
+      "informacion_prospecto": "Si el bebé tiene menos de 4 semanas de edad, consulte a su médico o farmacéutico, en particular si al bebé se le han administrado otros medicamentos que contengan propilenglicol o alcohol.",
+      "comentarios": "La administración conjunta con cualquier sustrato para la alcohol deshidrogenasa tal como el etanol puede provocar reacciones adversas graves en recién nacidos."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "50 mg/kg/día",
+      "informacion_prospecto": "Si el niño tiene menos de 5 años de edad, consulte a su médico o farmacéutico, en particular si se le han administrado otros medicamentos que contengan propilenglicol o alcohol.",
+      "comentarios": "La administración conjunta con cualquier sustrato para la alcohol deshidrogenasa tal como el etanol puede provocar reacciones adversas graves en niños menores de 5 años."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "50 mg/kg/día",
+      "informacion_prospecto": "Si está embarazada o en período de lactancia, no tome este medicamento a menos que esté recomendado por su médico. Su médico puede realizarle revisiones adicionales, mientras esté tomando este medicamento.",
+      "comentarios": "Aunque no se ha demostrado que el propilenglicol provoque toxicidad para la reproducción o para el desarrollo en animales o seres humanos, puede llegar al feto y se ha encontrado en la leche materna. Por tanto, la administración de propilenglicol a pacientes embarazadas o en período de lactancia se debe considerar caso por caso."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "50 mg/kg/día",
+      "informacion_prospecto": "Si padece insuficiencia hepática o renal, no tome este medicamento a menos que esté recomendado por su médico. Su médico puede realizarle revisiones adicionales mientras esté tomando este medicamento.",
+      "comentarios": "Se requiere vigilancia médica en pacientes con alteraciones en la función hepática o renal, ya que se han notificado varias reacciones adversas atribuidas al propilenglicol, tales como insuficiencia renal (necrosis tubular aguda), fallo renal agudo e insuficiencia hepática."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "500 mg/kg/día",
+      "informacion_prospecto": "El propilenglicol en este medicamento puede producir efectos parecidos a los que se producen al beber alcohol e incrementar la probabilidadde estos efectos adversos.\n\nNo usar este medicamento en niños menores de 5 años.\n\nUtilice este medicamento sólo si se lo ha recomendado su médico. Su médico puede realizarle revisiones adicionales mientras esté tomando este medicamento.",
+      "comentarios": "Se han notificado varias reacciones adversas con dosis elevadas o uso prolongado de propilenglicol como la hiperosmolaridad, la acidosis láctica, la insuficiencia renal (necrosis tubular aguda), fallo renal agudo, cardiotoxicidad (arritmia, hipotensión); trastornos del sistema nervioso central (depresión, coma, convulsiones; depresión respiratoria, disnea, insuficiencia hepática , reacción hemolítica (hemólisis intravascular) a y hemoglobinuria; o fallo orgánico multisistémico.\n\nPor tanto, se pueden administrar dosis superiores a 500 mg/kg/día pero considerando cada paciente caso por caso.\n\nLas reacciones adversas son, generalmente, reversibles después de la retirada del propilenglicol, y en los casos más graves después de la hemodiálisis.\n\nSe requiere vigilancia médica."
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "50 mg/kg/día",
+      "informacion_prospecto": "El propilen glicol puede provocar irritación en la piel.\n\nNo utilizar este medicamento en bebes menores de 4 semanas con heridas abiertas o grandes áreas de piel dañada (como quemaduras) sin consultar antes con su médico o farmacéutico.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Propilenglicol (E 1520) y ésteres de propilenglicol",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Tópica",
+      "umbral": "500 mg/kg/día",
+      "informacion_prospecto": "El propilenglicol puede provocar irritación en la piel.\n\nEste medicamento contiene propilenglicol, no utilizar en heridas abiertas o grandes áreas de piel dañada (como quemaduras) sin consultar antes con su médico o farmacéutico.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Aceite de sésamo",
+      "actualizado_a": null,
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "Raramente puede producir reacciones alérgicas graves.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Sodio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Menos de 1 mmol (23 mg) por dosis",
+      "informacion_prospecto": "Este medicamento contiene menos de 1 mmol de sodio (23 mg) por <unidad de dosis><unidad de volumen>; esto es, esencialmente “exento de sodio”.",
+      "comentarios": "1 mmol de sodio (Na)= 23 mg Na = 58,4 mg de sal (NaCl).\n\nLa información se refiere a un umbral basado en la cantidad total de sodio en el medicamento.\n\nEs especialmente relevante en el caso de medicamentos utilizados en niños o pacientes con dietas bajas en sodio, para aportar información a los prescriptores y tranquilizar a los padres o pacientes en relación al bajo nivel de sodio en el producto."
+    },
+    {
+      "nombre": "Sodio",
+      "actualizado_a": "09/10/2017\n\nCorrección 02/08/2019",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "1 mmol (23 mg) por dosis",
+      "informacion_prospecto": "Este medicamento contiene x mg de sodio (componente principal de la sal de mesa/para cocinar) en cada <unidad de dosis><unidad de volumen>. Esto equivale al y% de la ingesta diaria máxima de sodio recomendada para un adulto.",
+      "comentarios": "Para preparados parenterales de dosis variable (ej. basados en el peso) el contenido de sodio puede expresarse en mg por vial.\n\nPropuesta de redacción para la Ficha Técnica:\n\"Este medicamento contiene x mg de sodio por <unidad de dosis> equivalente a y% de la ingesta máxima diaria de 2 g de sodio recomendada por la OMS para un adulto.\""
+    },
+    {
+      "nombre": "Sodio",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "17 mmol (391 mg) en la dosis máxima diaria",
+      "informacion_prospecto": "Consulte con su médico o farmacéutico si necesita <Z> o más <unidad de dosis> diaria por un período prolongado especialmente si le han recomendado una dieta baja en sal (sodio).",
+      "comentarios": "Esto se aplica sólo para los medicamentos cuya posología permita que el medicamento se tome diariamente durante > 1 mes o para un uso repetido de más de 2 días a la semana.\n\n17 mmol (391 mg) es, de forma aproximada, el 20% de la ingesta máxima diaria recomendada por la OMS para adultos de 2 g de sodio y este contenido en sodio se considera “elevado”.\n\nTambién es relevante para niños, donde la ingesta máxima diaria se considera proporcional a la de los adultos y se basa en las necesidades energéti-cas.\n\n<Z dosis> refleja el número más bajo de unidades de dosis para las que se alcanza/ excede el umbral de 17 mmol (391 mg) de sodio. Redondear a la baja al número entero más próximo.\n\nPara la redacción de Ficha Técnica, consulte la recomendación del PRAC: “1.3. Sodium-containing effervescent, dispersible and soluble medicines – Cardiovascular events” (EMA/PRAC/234960/2015)."
+    },
+    {
+      "nombre": "Laurilsulfato de sodio",
+      "actualizado_a": "09/10/2017\n\nCorrección 19/11/2018",
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de lauril sulfato de sodio en cada <unidad de dosis><unidad de volumen> <equivalente a x/mg/<peso><volumen>>.\n\nEl laurilsulfato de sodio puede provocar reacciones cutáneas locales (como picazón o sensación de ardor) o aumentar las reacciones cutáneas provocadas por otros medicamentos cuando se aplican en la misma zona.",
+      "comentarios": "El grosor de la piel varía considerablemente según el lugar del cuerpo y con la edad del paciente y puede ser un factor importante en la sensibilidad al laurilsulfato de sodio (LSS).\n\nLa sensibilidad al LSS, además, varía según el tipo de formulación (y los efectos de otros excipientes), la concentración de LSS, el tiempo de contacto y la población de pacientes (niños, nivel de hidratación, color de la piel y enfermedad).\n\nLa población de pacientes con la función de la barrera cutánea disminuida, tales como la dermatitis atópica, es más sensible a las propiedades irritantes del LSS."
+    },
+    {
+      "nombre": "Acido sórbico (E 200) y sus sales",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Sorbitol (E 420)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene x mg de sorbitol en cada <unidad de dosis><unidad de volumen> <equivalente a x/mg/<peso><volumen>>.",
+      "comentarios": "Se debe tener en cuenta el efecto aditivo de los medicamentos que contienen sorbitol (o fructosa) administrados de forma concomitante y la ingesta de sorbitol (o fructosa) en la dieta.\n\nEl contenido en sorbitol en los medicamentos por vía oral puede afectar a la biodisponibilidad de otros medicamentos por vía oral que se administren de forma concomitante."
+    },
+    {
+      "nombre": "Sorbitol (E 420)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Intravenosa (IV)",
+      "umbral": "Cero",
+      "informacion_prospecto": "El sorbitol es una fuente de fructosa. Si usted (o su hijo) padecen intolerancia hereditaria a la fructosa (IHF), una enfermedad genética rara, no deben recibir este medicamento. Los pacientes con IHF no pueden descomponer la fructosa, lo que puede provocar efectos adversos graves.\n\nConsulte con su médico antes de recibir este medicamento si usted (o su hijo) padecen IHF o no pueden tomar alimentos o bebidas dulces porque les produce mareos, vómitos o efectos desagradables como hinchazón, calambres en el estómago o diarrea.",
+      "comentarios": "Los pacientes con intolerancia hereditaria a la fructosa (IHF) no deben recibir este medicamento a menos que sea estrictamente necesario.\n\nLos bebés y los niños (menores de 2 años de edad) podrían no estar diagnosticados de intolerancia hereditaria a la fructosa (IHF). Los medicamentos (que contienen sorbitol/fructosa) que se administran por vía intravenosa pueden resultar potencialmente mortales y deben estar contraindicados para esta población a menos que exista una necesidad clínica absoluta y no exista ninguna otra alternativa disponible.\n\nAntes de recibir este medicamento, se debe revisar detalladamente la historia clínica del paciente en cuanto a los síntomas de IHF."
+    },
+    {
+      "nombre": "Sorbitol (E 420)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral, parenteral (no vía IV)",
+      "umbral": "5 mg/kg/día",
+      "informacion_prospecto": "El sorbitol es una fuente de fructosa. Si su médico le ha indicado que usted (o su hijo) padecen una intolerancia a ciertos azúcares, o se les ha diagnosticado intolerancia hereditaria a la fructosa (IHF), una enfermedad genética rara, en la que el paciente no puede descomponer la fructosa, consulte usted (o su hijo) con su médico antes de tomar este medicamento.",
+      "comentarios": "Los pacientes con intolerancia hereditaria a la fructosa (IHF) no deben tomar/recibir este medicamento."
+    },
+    {
+      "nombre": "Sorbitol (E 420)",
+      "actualizado_a": "2017-10-09",
+      "via_administracion": "Oral",
+      "umbral": "140 mg/kg/día",
+      "informacion_prospecto": "El sorbitol puede provocar malestar gastrointestinal y un ligero efecto laxante.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Aceite de soja \nAceite de soja hidrogenado",
+      "actualizado_a": null,
+      "via_administracion": "Todas las vias de administración",
+      "umbral": "Cero",
+      "informacion_prospecto": "<Medicamento> contiene aceite de soja. No utilizar este medicamento en caso de alergia al cacahuete o a la soja.",
+      "comentarios": "Semejante al Aceite de Arachis. \n\nFicha Técnica: contraindicación."
+    },
+    {
+      "nombre": "Alcohol estearílico",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (ej. dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Sacarosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Si su médico le ha indicado que padece una intolerancia a ciertos azúcares, consulte con él antes de tomar este medicamento.",
+      "comentarios": "Propuesta para la Ficha Técnica: Los pacientes con intolerancia hereditaria a la fructosa, problemas de absorción a la glucosa o galactosa, o insuficiencia de sacarasa-isomaltasa, no deben tomar este medicamento."
+    },
+    {
+      "nombre": "Sacarosa",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "5 g",
+      "informacion_prospecto": "Contiene x g de sacarosa por dosis, lo que debe ser tenido en cuenta en pacientes con diabetes mellitus.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Sacarosa",
+      "actualizado_a": null,
+      "via_administracion": "Líquidos orales, pastillas para chupar y com-primidos masti-cables",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede perjudicar los dientes.",
+      "comentarios": "Incluir información solo si el medicamento está indicado para un uso crónico (ej., dos o más semanas)."
+    },
+    {
+      "nombre": "Sulfitos, incluyendo metabisulfitos\n\nej.:\nDióxido de Azufre (E 220) \nSulfito de Sodio (E 221) \nBisulfito de sodio (E 222)\nMetabisulfito de Sodio (E 223) \nMetabisulfito de Potasio (E 224)\nBisulfito de Potasio (E 228)",
+      "actualizado_a": null,
+      "via_administracion": "Oral\nParenteral\nInhalatoria",
+      "umbral": "Cero",
+      "informacion_prospecto": "Raramente puede provocar reacciones de hipersensibilidad graves y broncoespasmo.",
+      "comentarios": null
+    },
+    {
+      "nombre": "Almidón de trigo (que contiene gluten)",
+      "actualizado_a": "09/10/2017\n\nCorrección 19/11/2018",
+      "via_administracion": "Oral",
+      "umbral": "Cero",
+      "informacion_prospecto": "Este medicamento contiene niveles muy bajos de gluten (procedente de almidón de trigo)<. Se considera “sin gluten”*> y es muy poco probable que le cause problemas si padece la enfermedad celíaca.\n\nUna <unidad de dosis> no contiene más de x microgramos de gluten.\n\nSi usted padece alergia al trigo (distinta de la enfermedad celíaca) no debe tomar este medicamento.\n\n\n[* La declaración “sin gluten” se aplica sólo si el contenido de gluten en el medicamento es de menos de 20 ppm.]",
+      "comentarios": "El nombre del excipiente en el envase debe aparecer como “almidón de trigo”."
+    },
+    {
+      "nombre": "Grasa de lana (lanolina)",
+      "actualizado_a": null,
+      "via_administracion": "Tópica",
+      "umbral": "Cero",
+      "informacion_prospecto": "Puede provocar reacciones locales en la piel (como dermatitis de contacto).",
+      "comentarios": null
+    },
+    {
+      "nombre": "Xilitol (E 967)",
+      "actualizado_a": null,
+      "via_administracion": "Oral",
+      "umbral": "10 g",
+      "informacion_prospecto": "Puede tener un ligero efecto laxante.\n\nValor calórico: 2,4 kcal/g de xilitol.",
+      "comentarios": null
+    }
+  ]
+}
